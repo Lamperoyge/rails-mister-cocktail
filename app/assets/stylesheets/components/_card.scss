@@ -1,0 +1,62 @@
+.cocktail-card {
+  height: 175px;
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  transition: 0.4s;
+  box-shadow: 1px 1px 3px black;
+
+
+  &:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}
+.cocktail-card-name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 15px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.03, rgb(250,3,3)),
+    color-stop(0.52, #FF5A5F),
+    color-stop(0.76, rgb(42,24,173))
+);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cocktail-card-ingredients {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(0.03, rgb(250,3,3)),
+    color-stop(0.52, #FF5A5F),
+    color-stop(0.76, red)
+);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.index-container {
+  padding: 20px;
+}
+

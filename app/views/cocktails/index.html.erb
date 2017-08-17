@@ -1,0 +1,12 @@
+<h1 class = "our-cocktails">Our cocktails</h1>
+<hr>
+<div class="index-container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <%= render 'cocktail-card', cocktail: cocktail %>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to 'Create your own cocktail',new_cocktail_path, class: "btn btn-success"  %>
+</div>

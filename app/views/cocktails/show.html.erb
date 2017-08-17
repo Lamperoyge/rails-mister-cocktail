@@ -1,0 +1,18 @@
+<div class="flex">
+  <div>
+    <h1><%= @cocktail.name %></h1>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-xs-12 col-sm-6">
+    <ul>
+      <% @cocktail.doses.each do |dose| %>
+        <li><%= dose.description %> / <%= dose.ingredient.name %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+
