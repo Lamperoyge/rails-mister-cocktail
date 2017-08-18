@@ -14,12 +14,12 @@
     </ul>
   </div>
     <div class="col-xs-12 col-sm-6 col-sm-offset-6   ">
-      <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+      <%= cl_image_tag @cocktail.photo? ? @cocktail.photo : "whisk_kek7wh.png", height: 300, width: 400, crop: :fill %>
       </div>
 <div class="col-xs-12 col-sm-6 col-sm-offset-6">
 
   <% unless @cocktail.reviews.empty? %>
-    <ul>
+    <ul style="list-style: none;">
       <% @cocktail.reviews.each do |review| %>
 
         <li>
