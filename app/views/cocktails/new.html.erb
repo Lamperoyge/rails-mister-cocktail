@@ -5,7 +5,7 @@
         <%= f.input :name %>
         <%= f.simple_fields_for :doses do |d| %>
           <%= d.association :ingredient %>
-          <%= d.input :description %>
+          <%= d.input :description%>
         <% end %>
 
           <%= f.submit class: "btn btn-success" %>
