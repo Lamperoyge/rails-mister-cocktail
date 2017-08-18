@@ -7,6 +7,11 @@ end
 
 gem 'figaro'
 
+gem 'cloudinary'
+
+gem 'carrierwave', '~> 0.11.2'
+
+
 
 #FRONT-END
 gem 'bootstrap-sass'

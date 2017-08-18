@@ -1,5 +1,6 @@
 <%= link_to cocktail_path(cocktail) do %>
-  <div class="cocktail-card" style="background-image: url('http://icons.iconarchive.com/icons/iconsmind/outline/512/Cocktail-icon.png');">
+  <div class="cocktail-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')">
     <h3 class="cocktail-card-name"><%= cocktail.name %></h3>
     <p class="cocktail-card-ingredients"><%= cocktail.ingredients.name %></p>
   </div>
